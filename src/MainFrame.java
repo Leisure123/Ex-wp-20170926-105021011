@@ -54,6 +54,7 @@ public class MainFrame extends Frame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 MainFrame.this.setTitle("ヽ(∀ﾟ)人(ﾟ∀ﾟ)人( ﾟ∀)人(∀ﾟ)人(ﾟ∀ﾟ)人( ﾟ∀)ﾉ");
+                lab.setText("(￣∀￣)ﾉ");
             }
         });
         btn0.addActionListener(new ActionListener() {
@@ -76,8 +77,8 @@ public class MainFrame extends Frame{
             public void actionPerformed(ActionEvent e) {
                 if(labX < 400 && b){
                     labX += 10;
-                    fc_r += 5;
-                    fc_g += 5;
+                    fc_r -= 5;
+                    fc_g -= 3;
                     if(labX == 400){
                         b = false;
                     }
@@ -86,8 +87,8 @@ public class MainFrame extends Frame{
                     lab.setLocation(labX,labY);
                 }else {
                     labX -= 10;
-                    fc_r -= 5;
-                    fc_g -= 5;
+                    fc_r += 5;
+                    fc_g += 3;
                     if(labX == 0){
                         b = true;
                     }
