@@ -72,7 +72,7 @@ public class MainFrame extends Frame{
             }
         });
 
-        t1 = new Timer(300, new ActionListener() {
+        t1 = new Timer(100, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(labX < 400 && b){
